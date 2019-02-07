@@ -1,0 +1,59 @@
+.SlamBoard {
+  height: 100%;
+  background: linear-gradient(90deg, #3b4261, #151829);
+  padding: 30px;
+  border-radius: 4px;
+}
+
+.SlamBoard .title{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.SlamBoard .text {
+  font-size: 3rem;
+}
+.SlamBoard .img {
+  margin-left: 20px;
+}
+.SlamBoard .img img {
+  height: 40px;
+}
+
+.SlamBoard .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial;
+  font-weight: bold;
+}
+.SlamBoard .button {
+  width: 100%;
+  padding: 10px;
+  background: #648cee;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 100;
+}
+.SlamBoard .all-bets{
+  transform: translateX(3px);
+}
+.SlamBoard .my-bets{
+  transform: translateX(-3px);
+}
+.SlamBoard .active-button {
+  background: linear-gradient(90deg, #7367f0, #ce9ffc);
+  z-index: 101;
+}
+.SlamBoard .bets {
+  margin-top: 20px;
+  max-height: calc(100% - 130px);
+  overflow: auto;
+}
+@media only screen and (max-height: 630px) {
+  .SlamBoard {
+    padding: 20px;
+  }
+}

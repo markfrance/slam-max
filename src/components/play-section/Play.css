@@ -1,0 +1,135 @@
+.Play {
+  display: block;
+  height: 100%;
+}
+.Play .card {
+  height: 100%;
+}
+.mobile-slider-section{
+  display: none;
+}
+.main-row {
+  display: flex;
+  height: 100%;
+}
+.play-left{
+  flex: 9;
+  display: flex;
+  flex-direction: column;
+}
+.top-row{
+  /* background: #ff0000; */
+  flex: 4;
+  display: flex;
+}
+.scatter-section{
+  flex: 3.5;
+  margin-right: 20px;
+}
+.winning-number-section{
+  flex: 6;
+}
+.second-row{
+  /* background: #00ff00; */
+  margin-top: 20px;
+  flex: 5;
+  display: flex;
+}
+.bet-payout-section{
+  flex: 3.5;
+  margin-right: 20px;
+}
+.multiplier-buttons-section{
+  flex: 6;
+}
+.slam-button-section{
+  flex: 3.5;
+  margin-right: 20px;
+}
+.claim-slam-button-section{
+  flex: 3;
+  margin-right: 10px;
+}
+.login-button-section{
+  flex: 3;
+  margin-left: 10px;
+}
+
+.winning-number-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.third-row {
+  margin-top: 30px;
+  flex: 1.2;
+  height: 100%;
+  display: flex;
+}
+.third-row .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem; 
+  height: 100%;
+  color: #fff;
+  cursor: pointer;
+}
+.third-row .slam-button {
+  font-size: 3rem;
+  background: linear-gradient(90deg,#48befc, #940ece);
+}
+.third-row .claim-slam-button {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg,#7367f0, #ce9ffc);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.third-row .login-button {
+  font-size: 3rem;
+  background: none;
+  margin-left: 10px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px #cf8ee4, 0 0 10px #cf8ee4, 0 0 10px #cf8ee4 inset, 0 0 10px #cf8ee4 inset;
+}
+.slider-section{
+  flex: 1;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .top-row{
+    max-height: 225px;
+  }
+  .second-row{
+    max-height: 190px;
+  }
+  .third-row{
+    max-height: 50px;
+  }
+  .third-row .slam-button {
+    font-size: 2rem;
+  }
+  .third-row .claim-slam-button {
+    font-size: 1.5rem;
+  }
+  .mobile-slider-section{
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  @media only screen and (max-height: 763px) {
+    .third-row .slam-button {
+      font-size: 2rem;
+    }
+    .third-row .claim-slam-button {
+      font-size: 1.5rem;
+    }
+    .third-row .login-button{
+      font-size: 2rem;
+    }
+  }
+}

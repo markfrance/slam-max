@@ -1,0 +1,169 @@
+.App {
+  background: none;
+  overflow: hidden;
+}
+
+.page-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  width: 80vw;
+  height: 90vh;
+}
+@media only screen and (max-width: 1440px) {
+  .page {
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 1285px) {
+  .page {
+    width: 100vw;
+  }
+}
+
+.top-nav-section{
+  position: absolute;
+  top: 0;
+  width: 75vw;
+  text-align: right;
+  padding-right: 40px;
+}
+.sidenav-section {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.boards-section {
+  flex: 3;
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+}
+
+.right-section {
+  flex: 7;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+
+.sapce {
+  flex: 0.5;
+}
+
+.logo-section {
+  display: block;
+  flex: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: left;
+}
+
+.play {
+  flex: 8;
+  width: 100%;
+}
+
+.card {
+  background: linear-gradient(45deg, #3b4261, #151829);
+  padding: 3rem;
+  border-radius: 4px;
+}
+
+.small-card {
+  background: linear-gradient(90deg, #48befc, #940ece);
+}
+
+.small-card-inner {
+  text-align: center;
+}
+
+/* Phone View */
+@media only screen and (max-width: 1200px) {
+  .page {
+    width: 100vw;
+    height: 95vh;
+  }
+  .top-nav-section{
+    display: none;
+  }
+  .sidenav-section{
+    display: none;
+  }
+  .boards-section {
+    display: none;
+  }
+  .login-button-section{
+    display: none;
+  }
+  .scatter-section{
+    display: none;
+  }
+  .Multiplier .bar{
+    display: none;
+  }
+  .Multiplier .multiplier-sections{
+    height: 100%;
+  }
+  .Play .card {
+    background: none;
+    padding: 1rem;
+  }
+  .right-section{
+    padding: 0;
+    margin: 0;
+  }
+  .slider-section{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  @media only screen and (max-height: 730px) {
+    .page {
+      height: 98vh;
+    }
+  }
+
+  @media only screen and (max-height: 500px) {
+    .page {
+      width: 88vw;
+    }
+    .sidenav-section{
+      display: none;
+    }
+  }
+}
+@media only screen and (min-width: 1500px) {
+  @media only screen and (max-height: 730px) {
+    .page {
+      width: 75vw;
+    }
+    .sidenav-section{
+      display: none;
+    }
+  }
+}

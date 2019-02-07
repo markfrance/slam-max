@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "English",
+    "flag": "british"
+  },
+  {
+    "id": 2,
+    "name": "Chinese",
+    "flag": "chinese"
+  },
+  {
+    "id": 3,
+    "name": "Japanese",
+    "flag": "japanese"
+  },
+  {
+    "id": 4,
+    "name": "Korean",
+    "flag": "korean"
+  }
+]

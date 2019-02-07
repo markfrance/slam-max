@@ -1,0 +1,20 @@
+.Boards{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.slam-boards-section{
+ height: calc(60% - 265px);
+ }
+.troll-boards-section{
+  height: 246px;
+}
+@media only screen and (max-height: 630px) {
+  .slam-boards-section{
+    height: calc(60%);
+  }
+  .troll-boards-section{
+
+  }
+}

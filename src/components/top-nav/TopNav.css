@@ -1,0 +1,39 @@
+.TopNav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.minning-img img {
+  height: 40px;
+}
+
+.slam-minning {
+  margin: 0 15px;
+}
+
+.TopNav .value {
+  margin-left: 5px;
+}
+
+.scatter {
+  margin: 0 15px;
+}
+
+.faqs-section {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.languages img, .languagePopup img {
+  margin-left: 15px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.languagePopup {
+  position: absolute;
+  top: 45px;
+}

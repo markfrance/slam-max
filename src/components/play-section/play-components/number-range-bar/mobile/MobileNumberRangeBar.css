@@ -1,0 +1,35 @@
+.MobileNumberRangeBar{
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+  justify-content: flex-end;
+}
+.MobileNumberRangeBar .range{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.MobileNumberRangeBar .range-number{
+  font-size: 1.5rem;
+}
+.MobileNumberRangeBar .slider-container{
+  height: auto;
+}
+.MobileNumberRangeBar .rangeslider__handle{
+  top: -30px;
+  width: 45px;
+  height: 45px;
+  background-image: url('/assets/images/mobile/mobile_rangebar_button.png');
+}
+.MobileNumberRangeBar .rangeslider__handle:after{
+  display: none;
+}
+.MobileNumberRangeBar .rangeslider-horizontal{
+  height: 4px;
+  border-radius: 0;
+}
+.MobileNumberRangeBar .slider-container .rangeslider__fill{
+  box-shadow: none;
+  background: #8f77f4;
+  border-radius: 0;
+}

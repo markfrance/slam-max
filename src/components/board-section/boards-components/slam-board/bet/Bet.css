@@ -1,0 +1,50 @@
+.BoardBet {
+  background: rgba(92, 92, 128, 0.2);
+  height: 72px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.BoardBet:first-child {
+  margin-top: 0;
+}
+
+.BoardBet .img-container {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #ce9ffc, #7367f0);
+}
+
+.BoardBet .img-container>img {
+  width: 80%;
+}
+
+.BoardBet .text-container {
+  width: 70%;
+  height: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+  padding-left: 10px;
+}
+
+.BoardBet .text-container .text {
+  height: 20px;
+  line-height: 0.2;
+}
+
+.BoardBet .text-container .label {
+  font-size: 11px;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.BoardBet .text-container .value {
+  font-size: 11px;
+}

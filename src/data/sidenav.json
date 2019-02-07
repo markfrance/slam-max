@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Bet EOS",
+    "link": "/",
+    "image": "eos",
+    "active": true
+  },
+  {
+    "id": 2,
+    "name": "Bet SLAM",
+    "link": "/",
+    "image": "slam",
+    "active": false
+  },
+  {
+    "id": 3,
+    "name": "Bet BETDICE",
+    "link": "/",
+    "image": "betdice",
+    "active": false
+  },
+  {
+    "id": 4,
+    "name": "Exchanges",
+    "link": "/",
+    "image": "exchange",
+    "active": false
+  },
+  {
+    "id": 5,
+    "name": "Instructions",
+    "link": "/",
+    "image": "instructions",
+    "active": false
+  },
+  {
+    "id": 6,
+    "name": "Twitter",
+    "link": "/",
+    "image": "twitter",
+    "active": false
+  },
+  {
+    "id": 7,
+    "name": "Telegram",
+    "link": "/",
+    "image": "telegram",
+    "active": false
+  },
+  {
+    "id": 8,
+    "name": "Web",
+    "link": "/",
+    "image": "website",
+    "active": false
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "username": "User_name",
+    "timestamp": "23:10",
+    "betAmount": 1,
+    "roll_under": "96 / Lucky #: 24"
+  },
+  {
+    "id": 2,
+    "username": "User_name",
+    "timestamp": "23:21",
+    "betAmount": 1,
+    "roll_under": "96 / Lucky #: 47"
+  },
+  {
+    "id": 3,
+    "username": "User_name",
+    "timestamp": "23:32",
+    "betAmount": 1,
+    "roll_under": "96 / Lucky #: 99"
+  },
+  {
+    "id": 4,
+    "username": "User_name",
+    "timestamp": "23:43",
+    "betAmount": 1,
+    "roll_under": "96 / Lucky #: 72"
+  }
+]

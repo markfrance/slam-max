@@ -1,0 +1,102 @@
+.Multiplier {
+  height: 100%;
+}
+.bar {
+  height: 10px;
+  width: 100%;
+  background: linear-gradient(90deg, #7367f0, #ce9ffc);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.multiplier-sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 40px);
+}
+.multiplier-buttons {
+  display: flex;
+  height: 47%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.multiplier-fields-section {
+  height: 47%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.multiplier-fields{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;  
+}
+.multiplier-fields .separator { 
+  width: 2px;
+  height: 70%;
+  background: #ddd;
+}
+
+
+
+
+.MultiplierField {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 100%;
+}
+.MultiplierField .title {
+  color: #a473ea;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.MultiplierField .value {
+  font-size: 3.5rem;
+  margin-bottom: -1rem;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .MultiplierField .title {
+    color: #a473ea;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .MultiplierField .value {
+    font-size: 2.5rem;
+    margin-bottom: -1rem;
+  }
+  .multiplier-buttons {
+    display: flex;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  @media only screen and (max-height: 763px) {
+    .multiplier-sections {
+      height: 100%;
+    }
+    .MultiplierField .title {
+      color: #a473ea;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .MultiplierField .value {
+      font-size: 2.5rem;
+      margin-bottom: -1rem;
+    }
+    .multiplier-buttons {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    .bar {
+      display: none;
+    }
+  }
+}

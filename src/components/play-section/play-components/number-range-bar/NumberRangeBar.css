@@ -1,0 +1,41 @@
+.NumberRangeBar{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.range-number{
+  display: block;
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+}
+.slider-container{
+  height: calc(100% - 2rem);
+}
+.slider-container .rangeslider-vertical{
+  background: #fff;
+  border-radius: 20px;
+  height: 100%;
+  margin: 0 auto;
+}
+.slider-container .rangeslider__fill{
+  background-color: #fff;
+  box-shadow: 0 0 20px #cf8ee4, 0 0 20px #cf8ee4;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.slider-container .rangeslider__handle{
+  width: 60px;
+  height: 60px;
+  left: -25px;
+  border-radius: 60px;
+  user-select: none;
+  -webkit-user-select: none;
+  border: none;
+  background-image: url(/assets/images/bar_button.png);
+  background-position: center center;
+}
+.slider-container .rangeslider__handle:focus{
+  border: none;
+  outline: none;
+}

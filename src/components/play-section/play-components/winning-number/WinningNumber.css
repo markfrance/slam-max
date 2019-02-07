@@ -1,0 +1,71 @@
+.WinningNumber {
+  height: 100%;
+  flex: 1;
+}
+
+.WinningNumber .number-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #fff;
+  padding: 12px;
+}
+
+.WinningNumber .title {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.WinningNumber .number {
+  font-size: 9rem;
+  margin-bottom: -36px;
+}
+
+.WinningNumber .bottom-bar {
+  width: 100%;
+  height: 25px;
+  background: linear-gradient(90deg, #7367f0, #ce9ffc);
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .WinningNumber .number {
+    font-size: 5rem;
+    margin-bottom: -20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  @media only screen and (max-height: 763px) {
+    .WinningNumber .title {
+      font-size: 13px;
+      padding: 4px;
+    }
+    .WinningNumber .number {
+      font-size: 5rem;
+      margin-bottom: -20px;
+    }
+    .WinningNumber .bottom-bar {
+      height: 15px;
+    }
+  }
+  @media only screen and (max-height: 580px) {
+    .WinningNumber .title {
+      font-size: 10px;
+      padding: 3px;
+    }
+    .WinningNumber .number {
+      font-size: 4rem;
+      margin-bottom: -16px;
+    }
+    .WinningNumber .bottom-bar {
+      height: 12px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.Logo img{
+  width: 100%;
+}
+.mobile-logo-1, .mobile-logo-2{
+  display: none;
+}
+
+@media only screen and (max-width: 505px) {
+  .desktop-logo{
+    display: none;
+  }
+  .mobile-logo-1, .mobile-logo-2{
+    display: block;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  @media only screen and (max-height: 730px) {
+    .Logo img{
+      width: 80%;
+    }
+  }
+  @media only screen and (max-height: 580px) {
+    .Logo img{
+      width: 60%;
+    }
+  }
+}
