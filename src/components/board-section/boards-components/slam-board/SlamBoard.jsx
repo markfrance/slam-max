@@ -29,13 +29,15 @@ class SlamBoard extends Component {
     if(this.state.activeView === 'all-bets'){
       return this.state.allBets.map(bet => {
         return (
-          <Bet key={bet.id} bet={bet} />
+          <Bet key={bet.id} bet={bet}
+          strings={this.props.strings} />
         )
       });
     }else{
       return this.state.myBets.map(bet => {
         return (
-          <Bet key={bet.id} bet={bet} />
+          <Bet key={bet.id} bet={bet} 
+          strings={this.props.strings} />
         )
       });      
     }
@@ -46,7 +48,7 @@ class SlamBoard extends Component {
       <div className="SlamBoard">
         <div className="title">
           <div className="text">
-            SLAM BOARD
+            {this.props.strings.slamBoard}
           </div>
           <div className="img">
             <img src="/assets/images/eos_icon_purple.png" alt="EOS" />
@@ -57,13 +59,13 @@ class SlamBoard extends Component {
             className={this.state.activeView === "all-bets" ? "button all-bets active-button" : "button all-bets "}
             onClick={() => this.handleViewUpdate('all-bets')}
           >
-            All Bets
+            {this.props.strings.allBets}
           </div>
           <div 
             className={this.state.activeView === "my-bets" ? "button my-bets active-button" : "button my-bets "}
             onClick={() => this.handleViewUpdate('my-bets')}
           >
-            My Bets
+            {this.props.strings.myBets}
           </div>
         </div>
 

@@ -4,9 +4,7 @@ import './TopNav.css';
 
 // Component
 import FAQ from './components/faq';
-
-// Data
-import languages from '../../data/languages.json';
+import LanguageData from '../../data/languages.json';
 
 class TopNav extends Component {
 
@@ -16,8 +14,9 @@ class TopNav extends Component {
       showFAQ: false,
       scatterUser: "User_name",
       wallet: 1200,
-      activeLanguage: languages[0],
-      showLanguagePopup: false
+      showLanguagePopup: false,
+      activeLanguage: this.props.activeLanguage
+
     }
 
     this.handleFAQToggle = this.handleFAQToggle.bind(this);
@@ -29,6 +28,10 @@ class TopNav extends Component {
 
   componentWillMount() {
     // Make calls for scatterUser
+  }
+
+  componentWillReceiveProps({activeLanguage}) {
+    this.setState({activeLanguage:activeLanguage})
   }
 
   // Handler functions
@@ -43,13 +46,13 @@ class TopNav extends Component {
     const showLanguagePopup = this.state.showLanguagePopup;
     this.setState({
       showLanguagePopup: !showLanguagePopup
-    })
+    });
   }
 
   changeLanguage(newLanguage) {
-    this.setState({
-      activeLanguage: newLanguage
-    });
+
+    this.props.updateLanguage(newLanguage);
+    
     this.toggleLanguagePopup();
   }
 
@@ -58,7 +61,9 @@ class TopNav extends Component {
   renderFAQ() {
     if (this.state.showFAQ) {
       return (
-        <FAQ handleFAQToggle={() => this.handleFAQToggle()} />
+        <FAQ handleFAQToggle={() => this.handleFAQToggle()} 
+        strings={this.props.strings}
+        activeLanguage={this.props.activeLanguage}/>
       )
     }
     return;
@@ -80,9 +85,10 @@ class TopNav extends Component {
   }
 
   renderLanguagePopup() {
+  console.log(LanguageData);
     if (this.state.showLanguagePopup) {
-      const flags = languages.map(language => {
-        if (language.id !== this.state.activeLanguage.id) {
+      const flags = LanguageData.map(language => {
+        if (language.id !== this.props.activeLanguage.id) {
           return (
             <div className="language-flag" key={language.id} onClick={() => this.changeLanguage(language)}>
               <img src={"/assets/images/flags/" + language.flag + ".png"} alt={language.name} />
@@ -107,7 +113,7 @@ class TopNav extends Component {
         </div>
         <div className="slam-minning">
           <span className="label">
-            SLAM MINNING:
+            {this.props.strings.slamMining}
           </span>
           <span className="value">
             {this.state.wallet}
@@ -120,7 +126,7 @@ class TopNav extends Component {
           </div>
         </div>
         <div className="languages" onClick={() => this.toggleLanguagePopup()}>
-          <img src={"/assets/images/flags/" + this.state.activeLanguage.flag + ".png"} alt={this.state.activeLanguage.name} />
+          <img src={"/assets/images/flags/" + this.props.activeLanguage.flag + ".png"} alt={this.props.activeLanguage.name} />
         </div>
         {this.renderLanguagePopup()}
         {this.renderFAQ()}

@@ -10,19 +10,19 @@ const Bet = (props) => {
       </div>
       <div className="text-container">
         <div className="text">
-          <span className="label">Username: </span>
+          <span className="label">{props.strings.username} </span>
           <span className="value">{props.bet.username}</span>
         </div>
         <div className="text">
-          <span className="label">Timestamp: </span>
+          <span className="label">{props.strings.timeStamp}</span>
           <span className="value">{props.bet.timestamp}</span>
         </div>
         <div className="text">
-          <span className="label">Bet: </span>
+          <span className="label">{props.strings.bet} </span>
           <span className="value">{props.bet.betAmount} EOS</span>
         </div>
         <div className="text">
-          <span className="label">Roll Under: </span>
+          <span className="label">{props.strings.rollUnder} </span>
           <span className="value">{props.bet.roll_under}</span>
         </div>
       </div>

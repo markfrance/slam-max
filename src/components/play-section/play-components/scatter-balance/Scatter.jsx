@@ -3,8 +3,21 @@ import React, { Component } from 'react';
 import './Scatter.css';
 
 class Scatter extends Component {
-  state = {}
+
+ constructor(props){
+    super(props);
+
+    let iconImage = "assets/images/sidenav/" + this.props.activeToken.icon;
+
+    this.state = {
+      image: iconImage 
+    }
+
+  }
+
   render() {
+  let iconImage = "assets/images/sidenav/" + this.props.activeToken.icon;
+
     return (
       <div className="Scatter">
         <div className="small-card">
@@ -36,7 +49,7 @@ class Scatter extends Component {
             <div className="scatter-bottom">
               <div className="amount-box">
                 <span className="amount number">310.83</span>
-                <span><img src="assets/images/white_eos_icon.png" alt="EOS" /></span>
+                <span><img src={iconImage} alt={this.props.activeToken.name} /></span>
               </div>
               <div className="bottom-shadow"></div>
             </div>

@@ -33,12 +33,12 @@ class Multiplier extends Component {
           <div className="multiplier-fields-section">
             <div className="multiplier-fields">
               <div className="MultiplierField">
-                <div className="title">Payout Multiplier</div>
+                <div className="title">{this.props.strings.payoutMultipier}</div>
                 <div className="value number">{this.props.payoutMultiplier}x</div>
               </div>
               <span className="separator"></span>
               <div className="MultiplierField">
-                <div className="title">Win Chance</div>
+                <div className="title">{this.props.strings.winChance}</div>
                 <div className="value number">{this.props.winChance} %</div>
               </div>
             </div>

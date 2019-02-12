@@ -10,18 +10,55 @@ import Troll from './boards-components/troll/Troll';
 import allBets from '../../data/all_bets.json';
 import myBets from '../../data/my_bets.json';
 
+import api from '../../eos';
+
 class Boards extends Component {
-  state = {}
+  
+  constructor(props){
+    super(props);
+
+    this.state = {
+      allBets : allBets,
+      myBets : myBets
+    }
+  }
 
   componentWillMount(){
-    // Make API Call here for data bets lists.
+   
+  //  this._getBetHistory();
+
+    //TODO set state
+  //  this.state.myBets = this.state.allBets.filter(bet => {
+  //  return bet.action_trace.act.data.result.player == 
+  //  window.scatter.identity.accounts.find(account => account.blockchain === 'eos')});
+
+    console.log("ALL BETS:" + this.state.allBets);
+    console.log("MY BETS:" + this.state.myBets);
+  }
+
+  _getBetHistory() {
+    api.getActions('slamdevelogs', -1, -20).then(({ actions }) => {
+      this.state.allBets = actions.filter(action => {
+        return action.action_trace
+          && action.action_trace.act
+          && action.action_trace.act.data
+          && action.action_trace.act.data.result
+          && action.action_trace.act.account == "slamdevelogs" 
+          && action.action_trace.act.name == "result";
+      }).reverse();
+    });   
+  }
+
+  dateFormat(raw) {
+    return new Date(raw+'Z').toLocaleTimeString(); 
   }
 
   render() {
     return (
       <div className="Boards">
         <div className="slam-boards-section">
-          <SlamBoards myBets={myBets} allBets={allBets} />
+          <SlamBoards myBets={this.state.myBets} allBets={this.state.allBets} 
+          strings={this.props.strings} />
         </div>
         <div className="troll-boards-section">
           <Troll />
