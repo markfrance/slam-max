@@ -11,23 +11,27 @@ const Bet = (props) => {
       <div className="text-container">
         <div className="text">
           <span className="label">{props.strings.username} </span>
-          <span className="value">{props.bet.username}</span>
+          <span className="value">{props.bet.action_trace.act.data.result.player}</span>
         </div>
         <div className="text">
           <span className="label">{props.strings.timeStamp}</span>
-          <span className="value">{props.bet.timestamp}</span>
+          <span className="value">{props.bet.block_time}</span>
         </div>
         <div className="text">
           <span className="label">{props.strings.bet} </span>
-          <span className="value">{props.bet.betAmount} EOS</span>
+          <span className="value">{props.bet.action_trace.act.data.result.amount} EOS</span>
         </div>
         <div className="text">
           <span className="label">{props.strings.rollUnder} </span>
-          <span className="value">{props.bet.roll_under}</span>
+          <span className="value">{props.bet.action_trace.act.data.result.random_roll}</span>
         </div>
       </div>
     </div>
   );
 }
+
+dateFormat(raw) {
+        return new Date(raw+'Z').toLocaleTimeString(); 
+      }
 
 export default Bet;

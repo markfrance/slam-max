@@ -52,7 +52,6 @@ class TopNav extends Component {
   changeLanguage(newLanguage) {
 
     this.props.updateLanguage(newLanguage);
-    
     this.toggleLanguagePopup();
   }
 

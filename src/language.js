@@ -85,7 +85,6 @@ import LocalizedStrings from 'react-localization';
    ageRestrictionsA:"是的，请确保您年满21岁或以上参加任何SLAM游戏或点击网站上的任何内容。",
    canAnyonePlayQ:"任何人都可以玩SLAM MAX吗？",
    canAnyonePlayA:"如果您居住在彩票，体育博彩，互联网投注和赌博非法的地方，请不要点击网站上的任何内容。赌博和在线赌博法律因国家/地区而异。请确保您拥有检查您所在司法辖区和国家内有关赌博活动的法律，以确定所涵盖活动的合法性。"
-
  },
  jp: {
    slamBoard:"SLAM BOARD",
@@ -127,7 +126,6 @@ import LocalizedStrings from 'react-localization';
    ageRestrictionsA:"はい、21歳以上であることを確認して、SLAMゲームに参加するか、Webサイト上の何かをクリックしてください。",
    canAnyonePlayQ:"誰でもSLAM MAXをプレイできますか？",
    canAnyonePlayA:"宝くじ、スポーツの賭博、インターネットでの賭博、ギャンブルが違法な場所に住んでいる場合は、サイト上の何もクリックしないでください。ギャンブルおよびオンラインギャンブルの法律は国によって異なります。カバーされている活動の合法性を確認するために、あなた自身の管轄権および国内でのギャンブル活動に関する法律を確認してください。"
-
  },
  ko: {
    slamBoard:"SLAM BOARD",
@@ -169,7 +167,6 @@ import LocalizedStrings from 'react-localization';
    ageRestrictionsA:"예, SLAM 게임에 참여하거나 웹 사이트에서 아무 것도 클릭하지 않도록 21 세 이상인지 확인하십시오.",
    canAnyonePlayQ:"누구나 SLAM MAX를 할 수 있습니까?",
    canAnyonePlayA:"복권, 스포츠 베팅, 인터넷을 통한 베팅 및 도박이 불법 인 지역에 거주하는 경우 사이트의 아무 것도 클릭하지 마십시오. 도박 및 온라인 도박 관련 법률은 국가마다 다릅니다. 적용되는 활동의 합법성을 확인하기 위해 귀하의 관할권 및 국가 내의 도박 활동에 관한 법률을 확인했습니다."
-
  }
 });
 

@@ -1,0 +1,128 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Mon Mar 18 18:44:50 2019",
+    "version": "eosio::abi/1.1",
+    "structs": [
+        {
+            "name": "receipt",
+            "base": "",
+            "fields": [
+                {
+                    "name": "bet",
+                    "type": "st_bet"
+                },
+                {
+                    "name": "sym",
+                    "type": "symbol"
+                }
+            ]
+        },
+        {
+            "name": "reveal",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "seed",
+                    "type": "checksum256"
+                },
+                {
+                    "name": "sym",
+                    "type": "symbol"
+                }
+            ]
+        },
+        {
+            "name": "st_bet",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "player",
+                    "type": "name"
+                },
+                {
+                    "name": "referrer",
+                    "type": "name"
+                },
+                {
+                    "name": "amount",
+                    "type": "asset"
+                },
+                {
+                    "name": "roll_under",
+                    "type": "uint8"
+                },
+                {
+                    "name": "lucky_number",
+                    "type": "uint8"
+                },
+                {
+                    "name": "seed_hash",
+                    "type": "checksum256"
+                },
+                {
+                    "name": "user_seed_hash",
+                    "type": "checksum160"
+                },
+                {
+                    "name": "created_at",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "transfer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                },
+                {
+                    "name": "sym",
+                    "type": "symbol"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "receipt",
+            "type": "receipt",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "reveal",
+            "type": "reveal",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "transfer",
+            "type": "transfer",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [],
+    "ricardian_clauses": [],
+    "variants": [],
+    "abi_extensions": []
+}

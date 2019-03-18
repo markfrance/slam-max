@@ -49,10 +49,6 @@ class Boards extends Component {
     });   
   }
 
-  dateFormat(raw) {
-    return new Date(raw+'Z').toLocaleTimeString(); 
-  }
-
   render() {
     return (
       <div className="Boards">

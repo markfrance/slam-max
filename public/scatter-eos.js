@@ -1,7 +1,6 @@
 import ScatterJS from 'scatterjs-core';
 import ScatterEOS from 'scatterjs-plugin-eosjs2';
 
-
 const network = {
 	blockchain: "eos",
 	protocol: "http",
@@ -28,7 +27,6 @@ class ScatterEOS extends React.Component {
 
 		});
 	}
-
 }
 
 export default ScatterEOS;

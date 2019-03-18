@@ -1,38 +1,26 @@
 [
   {
     "id": 1,
-    "question": "How do you Play?",
-    "answer": "SLAM MAX is a gambling/betting game which is based on a random number generator. Players decide the range in which they want to place their bet. By utilizing the sliding block, players determine their range. When the player hits SLAM, a random number generator and a lucky number is selected. if the lucky number falls within the selected betting range, then SLAM, the player wins the game. If the random number is not within the range the player selected, then the player loses.",
-    "key": "howToPlay"
+   "key": "howToPlay"
   },
   {
     "id": 2,
-    "question": "Is the SLAM MAX game fair?",
-    "answer": "Yes, the SLAM MAX game is fair and is governed by EOS smart contract. Since the game is run by the smart contract and the numbers are randomly generated, it is proved to be fair, immutable, and cannot be manipulated.",
-    "key":"isSlamFair"
+   "key":"isSlamFair"
   },
   {
     "id": 3,
-    "question": "How do I get SLAM tokens?",
-    "answer": "SLAM tokens will be awarded on every bet. Users receive SLAM tokens in their SLAM bag equivalent to their bet amount on every game.",
-    "key": "howGetTokens"
+   "key": "howGetTokens"
   },
   {
     "id": 4,
-    "question": "How do I create an account?",
-    "answer": "If you have an EOS wallet, you can log in directly through Scatter. You need a Eos main network account and Scatter Wallet before you begin gaming. If you do not have an EOS account, you can create an account with Scatter that will generate a set of private keys or you can use a service like EOS account creator to make one.",
-    "key":"howCreateAccount"
+   "key":"howCreateAccount"
   },
   {
     "id": 5,
-    "question": "Are there age restrictions for playing SLAM MAX?",
-    "answer": "Yes, please ensure that you are 21 or older to participate in any of the SLAM games or click on anything on the website.",
     "key":"ageRestrictions"
   },    
   {
     "id": 6,
-    "question": "Can anyone play SLAM MAX?",
-    "answer": "If you reside in a location where lottery, sports betting, betting over the internet, and gambling is illegal, please do not click on anything on the site. Gambling and online gambling laws vary by country. Please makes sure that you have checked the laws regarding gambling activity within your own jurisdiction and country to ascertain the legality of the activities which are covered.",
-    "key":"canAnyonePlay"
+   "key":"canAnyonePlay"
   }
 ]

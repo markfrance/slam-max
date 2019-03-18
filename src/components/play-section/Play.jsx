@@ -168,7 +168,12 @@ class Play extends Component {
   }
 
   maxBetAmount() {
-    return this.floor(this.poolBalance / 100 / (98 / this.winChance) * 0.9, 4);
+    var balance =  this.floor(this.poolBalance / 100 / (98 / this.winChance) * 0.9, 4);
+
+    if(balance < this.props.activeToken.max)
+      return balance
+    else
+      return this.props.activeToken.max;
   }
 
   setEOS(rate) {
