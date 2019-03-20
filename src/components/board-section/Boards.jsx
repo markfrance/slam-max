@@ -24,16 +24,7 @@ class Boards extends Component {
   }
 
   componentWillMount(){
-   
-  //  this._getBetHistory();
-
-    //TODO set state
-  //  this.state.myBets = this.state.allBets.filter(bet => {
-  //  return bet.action_trace.act.data.result.player == 
-  //  window.scatter.identity.accounts.find(account => account.blockchain === 'eos')});
-
-    console.log("ALL BETS:" + this.state.allBets);
-    console.log("MY BETS:" + this.state.myBets);
+    this._getBetHistory();
   }
 
   _getBetHistory() {
@@ -46,7 +37,15 @@ class Boards extends Component {
           && action.action_trace.act.account == "slamdevelogs" 
           && action.action_trace.act.name == "result";
       }).reverse();
+
+      this.state.myBets = this.state.allBets.filter(bet => {
+    return bet.action_trace.act.data.result.player == 
+    window.scatter.identity.accounts.find(account => account.blockchain === 'eos')}).reverse();
+
+     console.log("ALL BETS:" + this.state.allBets);
+    console.log("MY BETS:" + this.state.myBets);
     });   
+
   }
 
   render() {

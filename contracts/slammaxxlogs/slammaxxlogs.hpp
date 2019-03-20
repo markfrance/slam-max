@@ -8,7 +8,8 @@ using namespace std;
 
 #define SLAM_MAX_GAME "slammaxxgame"_n
 
-struct st_bet {
+
+struct [[eosio::contract("slammaxxlogs"), eosio::table]] st_bet {
     uint64_t id;
     name player;
     name referrer;
@@ -20,7 +21,8 @@ struct st_bet {
     uint64_t created_at;
 };
 
-struct st_result {
+
+struct [[eosio::contract("slammaxxlogs"), eosio::table]] st_result {
     uint64_t bet_id;
     name player;
     name referrer;
@@ -34,12 +36,13 @@ struct st_result {
     asset payout;
 };
 
-class slammaxxlogs : public contract {
+
+class [[eosio::contract("slammaxxlogs")]] slammaxxlogs : public contract {
    public:
     slammaxxlogs(name self, name code, datastream<const char*> ds) 
     : contract(self, code, ds){};
 
-    // @abi action
+    [[eosio::action]] 
     void result(st_result result);
 };
 

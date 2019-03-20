@@ -8,7 +8,8 @@
 static const string PUB_KEY =
     "EOS4wpa8kRBbZof9JEpPAAgbnN65NhbBobW4x5gyxQoFfamhQCAMX";
 
-struct [[eosio::table]] st_bet {
+
+struct [[eosio::contract("slammaxxgame"), eosio::table]] st_bet {
     uint64_t id;
     name player;
     name referrer;
@@ -21,7 +22,7 @@ struct [[eosio::table]] st_bet {
     uint64_t primary_key() const { return id; }
 };
 
-struct [[eosio::table]] st_result {
+struct [[eosio::contract("slammaxxgame"), eosio::table]] st_result {
     uint64_t bet_id;
     name player;
     name referrer;
@@ -35,7 +36,8 @@ struct [[eosio::table]] st_result {
     asset payout;
 };
 
-struct [[eosio::table]] st_hash {
+
+struct [[eosio::contract("slammaxxgame"), eosio::table]] st_hash {
     capi_checksum256 hash;
     uint64_t expiration;
     uint64_t primary_key() const { return uint64_hash(hash); }
@@ -43,11 +45,13 @@ struct [[eosio::table]] st_hash {
     uint64_t byexpiration() const { return expiration; }
 };
 
-struct [[eosio::table]] st_fund_pool {
+
+struct [[eosio::contract("slammaxxgame"), eosio::table]] st_fund_pool {
     asset locked;
 };
 
-struct [[eosio::table]] st_global {
+
+struct [[eosio::contract("slammaxxgame"), eosio::table]] st_global {
     uint64_t current_id;
 };
 

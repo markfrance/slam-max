@@ -30,8 +30,4 @@ const Bet = (props) => {
   );
 }
 
-dateFormat(raw) {
-        return new Date(raw+'Z').toLocaleTimeString(); 
-      }
-
 export default Bet;

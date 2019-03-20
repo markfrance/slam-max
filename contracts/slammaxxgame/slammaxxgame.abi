@@ -1,5 +1,5 @@
 {
-    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Mon Mar 18 18:44:50 2019",
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Wed Mar 20 22:59:30 2019",
     "version": "eosio::abi/1.1",
     "structs": [
         {
@@ -121,7 +121,36 @@
             "ricardian_contract": ""
         }
     ],
-    "tables": [],
+    "tables": [
+        {
+            "name": "bets",
+            "type": "st_bet",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "fundpool",
+            "type": "st_fund_pool",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "global",
+            "type": "st_global",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "hash",
+            "type": "st_hash",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
     "ricardian_clauses": [],
     "variants": [],
     "abi_extensions": []

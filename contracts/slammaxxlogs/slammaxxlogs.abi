@@ -1,0 +1,135 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Wed Mar 20 23:35:18 2019",
+    "version": "eosio::abi/1.1",
+    "structs": [
+        {
+            "name": "result",
+            "base": "",
+            "fields": [
+                {
+                    "name": "result",
+                    "type": "st_result"
+                }
+            ]
+        },
+        {
+            "name": "st_bet",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "player",
+                    "type": "name"
+                },
+                {
+                    "name": "referrer",
+                    "type": "name"
+                },
+                {
+                    "name": "amount",
+                    "type": "asset"
+                },
+                {
+                    "name": "roll_under",
+                    "type": "uint8"
+                },
+                {
+                    "name": "lucky_number",
+                    "type": "uint8"
+                },
+                {
+                    "name": "seed_hash",
+                    "type": "checksum256"
+                },
+                {
+                    "name": "user_seed_hash",
+                    "type": "checksum160"
+                },
+                {
+                    "name": "created_at",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "st_result",
+            "base": "",
+            "fields": [
+                {
+                    "name": "bet_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "player",
+                    "type": "name"
+                },
+                {
+                    "name": "referrer",
+                    "type": "name"
+                },
+                {
+                    "name": "amount",
+                    "type": "asset"
+                },
+                {
+                    "name": "roll_under",
+                    "type": "uint8"
+                },
+                {
+                    "name": "lucky_number",
+                    "type": "uint8"
+                },
+                {
+                    "name": "random_roll",
+                    "type": "uint8"
+                },
+                {
+                    "name": "seed",
+                    "type": "checksum256"
+                },
+                {
+                    "name": "seed_hash",
+                    "type": "checksum256"
+                },
+                {
+                    "name": "user_seed_hash",
+                    "type": "checksum160"
+                },
+                {
+                    "name": "payout",
+                    "type": "asset"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "result",
+            "type": "result",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "st_bet",
+            "type": "st_bet",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "st_result",
+            "type": "st_result",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": [],
+    "abi_extensions": []
+}
